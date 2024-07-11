@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN de font-awesome -->
+    <!-- CDN son las siglas para Content Delivery Network (Red de Distribución de Contenidos) y, tal como su nombre lo indica, se trata de una red de servidores encargada de distribuir contenidos en Internet de manera más rápida y eficiente gracias a una serie de POPs (Puntos de Presencia) situados alrededor del mundo. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mi portafolio</title>
+    <script src=""></script>
+  </head>
+  <body>
+    <main>
+      <header>
+          <nav>
+              <div class="container">
+                  <div class="logo">
+                      <a href="index.html">J<span>V</span></a>
+                  </div>
+                  <div class="links">
+                      <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="#services">Servicios</a></li>
+                          <li><a href="#portfolio">Portafolio</a></li>
+                          <li><a href="#about">Acerca de</a></li>
+                          <li><a href="#panel">Panel</a></li>
+                          <li><a href="#lista">Lista</a></li>
+                          <li><a href="#testimonials">Testimonio</a></li>
+                          <li><a href="#contact">Contacto</a></li>
+                          <li><a href="https://wa.me/+573003205347" target="_blank" class="active">WhatsApp</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+          <nav>
+            <div class="header-content">
+              <div class="container grid-2">
+                <div class="column-1">
+                  <h1 class="header-title">Juan<span>Valencia</span></h1>
+                  <p class="text">¡Hola! Soy Juan Camilo Valencia Martinez, un desarrollador full stack apasionado por la creación 
+                    integral de soluciones web. Desde el frontend hasta el backend.</p>
+                  <a href="https://drive.google.com/file/d/1Afo3yIwUT2FDK_dM5kWQmFp7lzXV2405/view?usp=sharing" target="_blank">
+                  <button class="btn">Descargar CV</button>
+                  </a>
+                </div>
+                <div class="colunm-2 image">
+                  <img src="./img/shapes/points2.svg" alt="imagen" class="points points-2">
+                  <img src="./img/camilo.png" alt="camilo " class="img-element z-index">
+                </div>
+              </div>
+            </div>
+          </nav>
+      </header>
+        <!-- Sección de servicios -->
+      <section class="services section" id="services">
+        <div class="container">
+          <h3 class="title">Servicios</h3>
+          <p class="text">Desarrollo web, desarrollo movil y diseño de interfaces.</p>
+        </div>
+        <div class="cards">
+          <div class="card-wrap">
+            <div class="card" data-card="UI/UX">
+              <div class="card-content z-index">
+                <img src="./img/design-icon.svg" class="icon" alt="" />
+                <h3 class="title-sm">Diseño WEB</h3>
+                <p class="text">
+                  ¡Hola! Soy un diseñador web apasionado. Mi misión es convertir ideas en sitios web atractivos y fáciles de usar. 
+                  Utilizo mi creatividad y habilidades técnicas para dar vida a tu visión en la pantalla. Desde la elección de 
+                  colores hasta la disposición de los elementos, me aseguro de que cada detalle contribuya a una experiencia web 
+                  excepcional. ¡Vamos a construir juntos un rincón único en línea que destaque y deleite a tus visitantes!
+                </p>
+                <a href="#" class="btn small">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrap">
+            <div class="card" data-card="Code">
+              <div class="card-content z-index">
+                <img src="./img/code-icon.svg" class="icon" alt="" />
+                <h3 class="title-sm">Desarrollo WEB</h3>
+                <p class="text">
+                  ¡Hola! Soy un desarrollador web entusiasta. Mi trabajo consiste en transformar ideas en códigos que cobran 
+                  vida en la web. Utilizo mi habilidad técnica para crear sitios funcionales y atractivos. Desde la estructura 
+                  hasta la interactividad, me aseguro de que cada línea de código contribuya a una experiencia digital fluida. 
+                  ¡Hagamos que tu presencia en línea sea impactante y efectiva juntos!
+                </p>
+                <a href="#" class="btn small">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrap">
+            <div class="card" data-card="App">
+              <div class="card-content z-index">
+                <img src="./img/app-icon.svg" class="icon" alt="" />
+                <h3 class="title-sm">Desarrollo de Apps</h3>
+                <p class="text">
+                  ¡Hola! Soy un desarrollador de aplicaciones entusiasta. Mi pasión radica en convertir ideas 
+                  en aplicaciones prácticas y emocionantes. Utilizo mis habilidades técnicas para dar vida a conceptos en 
+                  dispositivos móviles. Desde la interfaz de usuario hasta la funcionalidad, trabajo para crear aplicaciones 
+                  que sean intuitivas y sorprendentes. ¡Vamos a construir juntos una experiencia móvil que destaque y satisfaga 
+                  las necesidades de tus usuarios!
+                </p>
+                <a href="#" class="btn small">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección de proyectos -->
+    <section class="portfolio section" id="portfolio">
+      <div class="background-bg"></div>
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="Mis proyectos">Portafolio</h3>
+        </div>
+        <div class="section-body">
+          <div class="filter button-group">
+            <button class="filter-btn active" data-filter="*">Todo</button>
+            <button class="filter-btn" data-filter=".ui">UI/UX</button>
+            <button class="filter-btn" data-filter=".webdev">WEB</button>
+            <button class="filter-btn" data-filter=".appdev">Apps</button>
+            <button class="filter-btn" data-filter=".logo-design">
+              Diseño
+            </button>
+          </div>
+          <div class="grid">
+            <div class="grid-item logo-design">
+              <div class="gallery-image">
+                <img src="./img/portfolio/port1.jpg" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>Diseño de Logo</h3>
+                    <h5>Ver demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item webdev">
+              <div class="gallery-image">
+                <img src="./img/portfolio/port2.jpg" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>Desarrollo WEB</h3>
+                    <h5>Ver demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item ui">
+              <div class="gallery-image">
+                <img src="./img/portfolio/port3.jpg" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>Diseño UI / UX</h3>
+                    <h5>Ver demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item appdev">
+              <div class="gallery-image">
+                <img src="./img/portfolio/port4.jpg" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>Desarrollo de Apps</h3>
+                    <h5>Ver demo</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="more-folio">
+            <a href="#" class="btn">Mas proyectos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+          <!-- Sección blog y testimonios -->
+          <section class="blog section">
+            <div class="container">
+              <div class="section-header">
+                <h3 class="title" data-title="Últimos post">Mi Blog</h3>
+                <p class="text">
+                  ¡Bienvenido a mi rincón digital! Este blog es mi espacio para compartir ideas, descubrimientos y experiencias 
+                  fascinantes. Mi objetivo es inspirar, informar y conectarme contigo a través de la escritura. 
+                  ¡Espero que encuentres aquí una fuente de inspiración y conocimiento! ¡Acompáñame en este viaje digital!
+                </p>
+              </div>
+              <div class="blog-wrapper">
+                <div class="blog-wrap">
+                  <div class="blog-card">
+                    <div class="blog-image">
+                      <img src="./img/blog1.png" alt="" />
+                    </div>
+                    <div class="blog-content">
+                      <div class="blog-info">
+                        <h5 class="blog-date">Marzo, 19 2023</h5>
+                        <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                      </div>
+                      <h3 class="title-sm">Título corto</h3>
+                      <p class="blog-text">
+                        Lorem ipsum, dolor sit amet elit. rem poimus? Tempora
+                        expedita eos autem! Lorem ipsum, dolor sit met.
+                      </p>
+                      <a href="#" class="btn small">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-wrap">
+                  <div class="blog-card">
+                    <div class="blog-image">
+                      <img src="./img/blog2.png" alt="" />
+                    </div>
+                    <div class="blog-content">
+                      <div class="blog-info">
+                        <h5 class="blog-date">Agosto, 10 2022</h5>
+                        <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                      </div>
+                      <h3 class="title-sm">Título corto</h3>
+                      <p class="blog-text">
+                        Lorem ipsum, dolor sit amet elit. Sint atque culpa repellat
+                        sunt sit amet nobis! Lorem ipsum dolor sit amet.
+                      </p>
+                      <a href="#" class="btn small">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-wrap">
+                  <div class="blog-card">
+                    <div class="blog-image">
+                      <img src="./img/blog3.png" alt="" />
+                    </div>
+                    <div class="blog-content">
+                      <div class="blog-info">
+                        <h5 class="blog-date">December, 12 2021</h5>
+                        <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                      </div>
+                      <h3 class="title-sm">Título corto</h3>
+                      <p class="blog-text">
+                        Lorem ipsum dolor sit, amet elit. enim numquam, laborum
+                        earum? Lorem ipsum dolor sit amet.
+                      </p>
+                      <a href="#" class="btn small">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="testimonials section" id="testimonials">
+            <div class="container">
+              <div class="section-header">
+                <h3 class="title" data-title="Qué dicen de nosotros">
+                  Testimonios
+                </h3>
+              </div>
+              <div class="testi-content grid-2">
+                <div class="column-1 reviews">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide review">
+                        <i class="fas fa-quote-left quote"></i>
+                        <div class="rate">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                          Laudantium adipisci veniam debitis quas, sapiente
+                          repellendus mollitia. Laboriosam labore voluptate quos?
+                        </p>
+                        <div class="review-info">
+                          <h3 class="review-name">Maria Martinez</h3>
+                          <h5 class="review-job">Fotógrafa, Bogotá</h5>
+                        </div>
+                      </div>
+                      <div class="swiper-slide review">
+                        <i class="fas fa-quote-left quote"></i>
+                        <div class="rate">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                          Fugiat voluptate consequatur aut tenetur fugit error
+                          molestiae quaerat ex odio rem?
+                        </p>
+                        <div class="review-info">
+                          <h3 class="review-name">Esteban Montes</h3>
+                          <h5 class="review-job">CEO, Empresa</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="review-nav swiper-button-prev">
+                      <i class="fas fa-long-arrow-alt-left"></i>
+                    </div>
+                    <div class="review-nav swiper-button-next">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="column-2 image">
+                  <img src="./img/testi.svg" alt="" class="img-element" />
+                </div>
+              </div>
+            </div>
+          </section>
+                    <!--Sección en Tailwind - PANEL-->
+
+<section class="services section" id="panel">
+  <div class="container">
+    <h3 class="title">Panel</h3>
+  </div>
+  <div class="min-h-full">
+    <nav class="bg-gray-800">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-10 flex items-baseline space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Panel</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Equipo</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Proyectos</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendario</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Reportes</a>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-4 flex items-center md:ml-6">
+              <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">View notifications</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                </svg>
+              </button>
+
+              <!-- Profile dropdown -->
+              <div class="relative ml-3">
+                <div>
+                  <button type="button" class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                  </button>
+                </div>
+
+                <!--
+                  Dropdown menu, show/hide based on menu state.
+
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+                <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                  <!-- Active: "bg-gray-100", Not Active: "" -->
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Tu perfil</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Opciones</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Salir</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="-mr-2 flex md:hidden">
+            <!-- Mobile menu button -->
+            <button type="button" class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Abrir menú</span>
+              <!-- Menu open: "hidden", Menu closed: "block" -->
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!-- Menu open: "block", Menu closed: "hidden" -->
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="md:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Panel</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Equipo</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Proyectos</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendario</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Reportes</a>
+        </div>
+        <div class="border-t border-gray-700 pb-3 pt-4">
+          <div class="flex items-center px-5">
+            <div class="flex-shrink-0">
+              <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            </div>
+            <div class="ml-3">
+              <div class="text-base font-medium leading-none text-white">Tom Cook</div>
+              <div class="text-sm font-medium leading-none text-gray-400">tom@example.com</div>
+            </div>
+            <button type="button" class="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">View notifications</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-3 space-y-1 px-2">
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Your Profile</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Settings</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Sign out</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-white shadow">
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900">Panel</h1>
+      </div>
+    </header>
+    <main>
+      <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+        <!-- Your content -->
+      </div>
+    </main>
+  </div>
+</section>
+            <!--Sección en Tailwind - LISTA-->
+      <section class="services section" id="lista">
+        <div class="container">
+          <h3 class="title">Lista de compañeros</h3>
+        </div>
+
+          <ul role="list" class="divide-y divide-gray-100">
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">Leslie Alexander</p>
+                  <p class="mt-1 truncate text-xs leading-5 text-gray-500">leslie.alexander@example.com</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">Co-Founder / CEO</p>
+                <p class="mt-1 text-xs leading-5 text-gray-500">Last seen <time datetime="2023-01-23T13:23Z">3h ago</time></p>
+              </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">Michael Foster</p>
+                  <p class="mt-1 truncate text-xs leading-5 text-gray-500">michael.foster@example.com</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">Co-Founder / CTO</p>
+                <p class="mt-1 text-xs leading-5 text-gray-500">Last seen <time datetime="2023-01-23T13:23Z">3h ago</time></p>
+              </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">Dries Vincent</p>
+                  <p class="mt-1 truncate text-xs leading-5 text-gray-500">dries.vincent@example.com</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">Business Relations</p>
+                <div class="mt-1 flex items-center gap-x-1.5">
+                  <div class="flex-none rounded-full bg-emerald-500/20 p-1">
+                    <div class="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
+                  </div>
+                  <p class="text-xs leading-5 text-gray-500">Online</p>
+                </div>
+              </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">Lindsay Walton</p>
+                  <p class="mt-1 truncate text-xs leading-5 text-gray-500">lindsay.walton@example.com</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">Front-end Developer</p>
+                <p class="mt-1 text-xs leading-5 text-gray-500">Last seen <time datetime="2023-01-23T13:23Z">3h ago</time></p>
+              </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">Courtney Henry</p>
+                  <p class="mt-1 truncate text-xs leading-5 text-gray-500">courtney.henry@example.com</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">Designer</p>
+                <p class="mt-1 text-xs leading-5 text-gray-500">Last seen <time datetime="2023-01-23T13:23Z">3h ago</time></p>
+              </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">Tom Cook</p>
+                  <p class="mt-1 truncate text-xs leading-5 text-gray-500">tom.cook@example.com</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">Director of Product</p>
+                <div class="mt-1 flex items-center gap-x-1.5">
+                  <div class="flex-none rounded-full bg-emerald-500/20 p-1">
+                    <div class="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
+                  </div>
+                  <p class="text-xs leading-5 text-gray-500">Online</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+          <!-- Sección acerca de -->
+          <section class="about section" id="about">
+            <div class="container">
+              <div class="section-header">
+                <h3 class="title" data-title="Quien soy yo">Acerca de</h3>
+              </div>
+              <div class="section-body grid-2">
+                <div class="column-1">
+                  <h3 class="title-sm">Hola, Yo soy</h3>
+                  <p class="text">
+                    ¡Hola! Soy Juan Camilo Valencia Martinez, un desarrollador full stack apasionado por la creación 
+                    integral de soluciones web. Desde el frontend hasta el backend, me sumerjo en todos los aspectos del desarrollo 
+                    para ofrecer experiencias digitales completas y eficientes. Mi conjunto de habilidades abarca tanto el diseño 
+                    atractivo del frontend con HTML, CSS y JavaScript, como la implementación robusta del backend con tecnologías 
+                    como Node.js y bases de datos como MongoDB. Mi enfoque versátil me permite abordar proyectos de manera integral, 
+                    desde la concepción hasta la implementación. Estoy emocionado por seguir explorando nuevas tecnologías y desafíos, 
+                    ¡listo para llevar tus ideas al siguiente nivel!.
+                  </p>
+                  <div class="skills">
+                    <div class="skill html">
+                      <h3 class="skill-title">HTML</h3>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90%"></div>
+                      </div>
+                    </div>
+                    <div class="skill css">
+                      <h3 class="skill-title">CSS</h3>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70%"></div>
+                      </div>
+                    </div>
+                    <div class="skill js">
+                      <h3 class="skill-title">JavaScript</h3>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80%"></div>
+                      </div>
+                    </div>
+                    <div class="skill js">
+                      <h3 class="skill-title">Python</h3>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70%"></div>
+                      </div>
+                    </div>
+                    <div class="skill js">
+                      <h3 class="skill-title">Frameworks</h3>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80%"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="btn">Ver más</a>
+                </div>
+                <div class="column-2 image">
+                  <img src="./img/shapes/points4.svg" class="points" alt="" />
+                  <img src="./img/camilo.png" class="z-index" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Sección de contacto -->
+          <section class="contact" id="contact">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.2762225724655!2d-75.50626962525865!3d5.058910194917793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4765607ca5e179%3A0xa93342cd1a7c2ad8!2sCl.%2050%20%2329-22%2C%20Manizales%2C%20Caldas!5e0!3m2!1ses!2sco!4v1703971802136!5m2!1ses!2sco"
+              width="100%"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="container">
+              <div class="contact-box">
+                <div class="contact-info">
+                  <h3 class="title">Ponte en contacto</h3>
+                  <p class="text">
+                    ¡Hola! Estoy aquí para ayudarte. Si tienes preguntas, ideas emocionantes o simplemente quieres conectarte, 
+                    no dudes en ponerte en contacto conmigo. Estoy ansioso por escucharte y colaborar en lo que sea que necesites. 
+                    ¡Hablemos pronto!
+                  </p>
+                  <div class="information-wrap">
+                    <div class="information">
+                      <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <p class="info-text">Manizales. Colombia</p>
+                    </div>
+                    <div class="information">
+                      <div class="contact-icon">
+                        <i class="fas fa-paper-plane"></i>
+                      </div>
+                      <p class="info-text">valencia.jc93@gmail.com</p>
+                    </div>
+                    <div class="information">
+                      <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                      </div>
+                      <p class="info-text">(+57) 300 320 5347</p>
+                    </div>
+                  </div>
+                </div>
+                <form class="contact-form">
+                  <h3 class="title">Contáctame</h3>
+                  <div class="row">
+                    <input type="text" class="contact-input" placeholder="Nombre" />
+                    <input
+                      type="text"
+                      class="contact-input"
+                      placeholder="Apellido"
+                    />
+                  </div>
+                  <div class="row">
+                    <input
+                      type="text"
+                      class="contact-input"
+                      placeholder="Celular"
+                    />
+                    <input type="email" class="contact-input" placeholder="Email" />
+                  </div>
+                  <div class="row">
+                    <textarea
+                      name="message"
+                      class="contact-input textarea"
+                      placeholder="Mensaje"
+                    ></textarea>
+                  </div>
+                  <a href="#" class="btn">Enviar</a>
+                </form>
+              </div>
+            </div>
+          </section>
+          <section class="hireme" id="hireme">
+            <div class="container">
+              <h3 class="title">Hablemos de tu proyecto</h3>
+              <p class="text">
+                Estoy listo para escuchar tus ideas, metas y desafíos. Juntos, podemos 
+                explorar cómo llevar tu visión al siguiente nivel. Estoy aquí para colaborar y hacer que tu proyecto 
+                sea un éxito. ¡Adelante, cuéntame más y comencemos esta emocionante conversación!
+              </p>
+              <a href="https://wa.me/+573003205347" target="_blank" class="btn"
+                >WhatsApp</a
+              >
+            </div>
+          </section>
+        </main>
+        <!-- Sección pie de página -->
+        <footer class="footer">
+          <div class="container">
+            <div class="grid-4">
+              <div class="grid-4-col footer-about">
+                <h3 class="title-sm">Acerca de</h3>
+                <p class="text">
+                  ¡Hola! Soy un desarrollador full stack apasionado por la creación integral de soluciones web. 
+                  Desde el frontend hasta el backend.
+                </p>
+              </div>
+              <div class="grid-4-col footer-links">
+                <h3 class="title-sm">Links</h3>
+                <ul>
+                  <li>
+                    <a href="#services">Servicios</a>
+                  </li>
+                  <li>
+                    <a href="#portfolio">Portafolio</a>
+                  </li>
+                  <li>
+                    <a href="#about">Acerca de</a>
+                  </li>
+                  <li>
+                    <a href="#testimonials">Testimonios</a>
+                  </li>
+                  <li>
+                    <a href="#panel">Panel</a>
+                  </li>
+                  <li>
+                    <a href="#lista">Lista</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="grid-4-col footer-links">
+                <h3 class="title-sm">Servicios</h3>
+                <ul>
+                  <li>
+                    <a href="#">Diseño WEB</a>
+                  </li>
+                  <li>
+                    <a href="#">Desarrollo WEB</a>
+                  </li>
+                  <li>
+                    <a href="#">Diseño de Apps</a>
+                  </li>
+                  <li>
+                    <a href="#">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="#">Diseño UI/UX</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="grid-4-col footer-newstletter">
+                <h3 class="title-sm">Suscríbete</h3>
+                <p class="text">
+                  ¡Únete a nuestra comunidad exclusiva! Suscríbete para recibir contenido emocionante, 
+                  actualizaciones y sorpresas directamente en tu bandeja de entrada. No te pierdas las últimas noticias, 
+                  consejos y experiencias. ¡Haz clic en el botón de suscripción y forma parte de nuestra comunidad hoy!
+                </p>
+                <div class="footer-input-wrap">
+                  <input type="email" class="footer-input" placeholder="Email" />
+                  <a href="#" class="input-arrow">
+                    <i class="fas fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-footer">
+              <div class="copyright">
+                <p class="text">
+                  Copyright&copy;2023 | Hecho por
+                  <a href="#" class="split-text"> Juan Camilo Valencia Martinez </a>
+                </p>
+              </div>
+              <div class="followme-wrap">
+                <div class="followme">
+                  <h3>Sígueme</h3>
+                  <span class="footer-line"></span>
+                  <div class="social-media">
+                    <a href="https://www.facebook.com/jcvalencia1093?mibextid=ZbWKwL">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/jcvalencia0510?t=1ja99kTLAJtK_ZzY3nkdJg&s=09">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jcamilovalencia_?igsh=NXV5ODkxbmsxZDY2">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/juan-camilo-valencia-martinez-b14989288">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="back-btn-wrap">
+                  <a href="#" class="back-btn">
+                    <i class="fas fa-chevron-up"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+  </body>
+</html>
